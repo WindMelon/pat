@@ -30,12 +30,13 @@ void format(char a[],int n)
 
 int main()
 {
-    int a,b,sum;
-    char c[1];
+    int a,b;
     scanf("%d %d",&a,&b);
-    sum = a+b;
+    int sum = a+b;
+    char* c;
     sprintf(c,"%d",sum);
     format(c,strlen(c));
     getchar();
     getchar();
 }
+/*自己能编译运行成功但是不知道为什么PATOJ上测试不通过显示段错误*/
